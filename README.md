@@ -183,7 +183,7 @@ At the main folder execute the following command in console to get the required 
 
 #### Step 4:
 
-At the main folder execute the following command in console to creates a build directory with a production build of 3d portfolio:
+At the main folder execute the following command in console to creates a build directory with a production build of *VirtualSpeakz-AI*:
 
 ```bash
   npm run build
