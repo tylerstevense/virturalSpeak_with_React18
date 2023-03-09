@@ -55,6 +55,7 @@
 
 - [About the Project](#star2-about-the-project)
   * [Folder Structure](#bangbang-folder-structure)
+  * [Environment Variables](#key-environment-variables)
   * [Tech Stack](#space_invader-tech-stack)
 - [Getting Started](#toolbox-getting-started)
   * [Installation](#gear-installation)
@@ -119,6 +120,30 @@ VirtualSpeakz-AI-Messenger/
   |- package.json
 ```
 <br />
+
+<!-- ENV VARIABLES -->
+### :key: Environment Variables
+
+In order to use *VirtualSpeakz-AI* Messenger you have to add some environment variables to .env files,
+*VirtualSpeakz-AI* uses OpenAI's API and Chat Engine API, so, you've to create openAI api key [here](https://openai.com/api) and a Chat Engine account [here](https://chatengine.io/), to run this webapp, meet with the conditions below.\
+
+##### _client-side_ [client/.env] 
+create `.env` file in `client/` directory & add the following environment variables:
+```env
+VITE_BASE_URL=<SERVER_URL>
+VITE_PROJECT_ID=<CHAT_ENGINE_PROJECT_ID>
+```
+
+##### _server-side_ [server/.env]
+create `.env` file in `server/` directory & add the following environment variables:
+```env
+PORT=<PORT>
+OPENAI_API_KEY=<OPEN_AI_API_KEY>
+CE_PROJECT_ID=<CHAT_ENGINE_PROJECT_ID>
+CE_PRIVATE_KEY=<CHAT_ENGINE_PRIVATE_KEY>
+CE_BOT_USER_NAME=<SYSTEM_AI_BOT_USER_NAME>
+CE_BOT_USER_SECRET=<SYSTEM_AI_BOT_USER_SECRET>
+```
 
 <!-- TechStack -->
 ### :space_invader: Tech Stack
