@@ -120,7 +120,6 @@ VirtualSpeakz-AI-Messenger/
   |- package.json
 ```
 <br />
-
 <!-- ENV VARIABLES -->
 ### :key: Environment Variables
 
@@ -143,6 +142,17 @@ CE_PROJECT_ID=<CHAT_ENGINE_PROJECT_ID>
 CE_PRIVATE_KEY=<CHAT_ENGINE_PRIVATE_KEY>
 CE_BOT_USER_NAME=<SYSTEM_AI_BOT_USER_NAME>
 CE_BOT_USER_SECRET=<SYSTEM_AI_BOT_USER_SECRET>
+```
+<!-- User -->
+### :scroll: Account Details
+
+In order to use _VirtualSpeak-AI_ chat application you've to sign up and creating chats.
+Use of AI chat will do so creating chat named `AI-{Chat/Code/Assist}`.
+Details for account in which all chats exists:
+
+```javascript
+Username: Admin
+Password: 123321
 ```
 
 <!-- TechStack -->
