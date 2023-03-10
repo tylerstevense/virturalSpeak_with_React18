@@ -28,6 +28,11 @@ const configuration = new Configuration({
 export const openai = new OpenAIApi(configuration);
 
 /* ROUTES */
+app.get("/", async (req, res) => {
+  res.status(200).send({
+    message: "Hello from VirtualSpeakz-AI!",
+  });
+});
 app.use("/openai", openAiRoutes);
 app.use("/auth", authRoutes);
 
