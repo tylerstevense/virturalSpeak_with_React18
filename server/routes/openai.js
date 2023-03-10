@@ -49,7 +49,7 @@ router.post("/text", async (req, res) => {
         },
       }
     );
-    res.status(200).json({ text: response.data.choices[0].message.content });
+    res.status(200).json({ response: response.data.choices[0].message.content });
   } catch (error) {
     console.log("🚀 ~ file: openai.js:13 ~ router.post ~ error:", error);
     res.status(500).json({ error: error.message });
@@ -89,7 +89,7 @@ router.post("/code", async (req, res) => {
       }
     );
 
-    res.status(200).json({ text: response.data.choices[0].message.content });
+    res.status(200).json({ response: response.data });
   } catch (error) {
     console.error("error", error);
     res.status(500).json({ error: error.response.data.error });
@@ -113,7 +113,7 @@ router.post("/assist", async (req, res) => {
       ],
     });
 
-    res.status(200).json({ text: response.data.choices[0].message.content });
+    res.status(200).json({ response: response.data });
   } catch (error) {
     console.error("error", error);
     res.status(500).json({ error: error.message });
