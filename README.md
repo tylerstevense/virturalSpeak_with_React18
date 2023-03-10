@@ -120,6 +120,7 @@ VirtualSpeakz-AI-Messenger/
   |- package.json
 ```
 <br />
+
 <!-- ENV VARIABLES -->
 ### :key: Environment Variables
 
